@@ -14,10 +14,9 @@ data.forEach((element, index) => {
     console.log(`index: ${index}, value: ${element.pc_number}`);
     let row = cortex_table_body.insertRow(index);
     for(let prop in element) {
-        let cell0 = row.insertCell(0);
-        let cell1 = row.insertCell(1);
-
-        cell0.innerHTML = prop
-        cell1.innerHTML = element[prop]        
+        let cell = row.insertCell();
+        cell.innerHTML = prop
+        cell = row.insertCell();
+        cell.innerHTML = element[prop]
     }
 });
