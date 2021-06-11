@@ -21,5 +21,5 @@ data.forEach((element, index) => {
         cell.innerHTML = prop
         cell = row.insertCell();
         cell.innerHTML = element[prop]
-    }    
+    }
 });
